@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>LAA TV Trello Viewer</title> <!-- COMPLETE -->
+
+	<link rel="stylesheet" href="styles.css"> <!-- COMPLETE -->
+
+</head>
+
+
+<body>
+
+	<div id="loggedout">
+		<a id="connectLink" href="#">Connect To Trello</a>
+	</div>
+
+	<div id="loggedin">
+		<div id="header">
+			Logged in to as <span id="fullName"></span> 
+			<a id="disconnect" href="#">Log Out</a>
+		</div>
+		
+		<div id="output"></div>
+	</div>    
+
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="https://api.trello.com/1/client.js?key=b83b3359a3937ebccbb5ed48417aab22"></script>
+	<script src="main.js"></script>
+
+  
+</body>
