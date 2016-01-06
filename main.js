@@ -20,7 +20,6 @@ var onAuthorize = function() {
                 .appendTo($cards);
             });  
         });
-    });
 
 };
 
