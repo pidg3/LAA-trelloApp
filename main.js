@@ -33,22 +33,17 @@ var logout = function() {
     Trello.deauthorize();
     updateLoggedIn();
 };
-                          
-Trello.authorize({
-    type: "redirect",
+
+$("#connectLink")
+.click(function(){
+    Trello.authorize({
+    type: "popup",
       name: "LAA TV - Trello Viewer",
       scope: {
         read: true,
         write: false },
     success: onAuthorize,
     error: console.log("Login Failed")
-});
-
-$("#connectLink")
-.click(function(){
-    Trello.authorize({
-        type: "popup",
-        success: onAuthorize
     })
 });
     
